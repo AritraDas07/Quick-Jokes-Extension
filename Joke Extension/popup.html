@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quick Jokes</title>
+  <style>
+    body {
+      width: 300px;
+      min-height: 200px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+    }
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      text-align: center;
+    }
+    
+    h1 {
+      color: #007bff;
+      margin-bottom: 15px;
+      font-size: 24px;
+    }
+    
+    #joke-text {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    #new-joke-btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      font-size: 14px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    #new-joke-btn:hover {
+      background-color: #0069d9;
+    }
+    
+    .joke-type {
+      margin-bottom: 15px;
+    }
+    
+    .joke-type label {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Quick Jokes</h1>
+    
+    <div class="joke-type">
+      <label>
+        <input type="radio" name="joke-type" value="general" checked> General
+      </label>
+      <label>
+        <input type="radio" name="joke-type" value="programming"> Programming
+      </label>
+      <label>
+        <input type="radio" name="joke-type" value="dad"> Dad
+      </label>
+    </div>
+    
+    <div id="joke-text">Click the button for a joke!</div>
+    
+    <button id="new-joke-btn">Get New Joke</button>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

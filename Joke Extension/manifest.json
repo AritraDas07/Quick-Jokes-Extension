@@ -1,0 +1,9 @@
+{
+    "manifest_version": 3,
+    "name": "Quick Jokes",
+    "version": "1.0",
+    "description": "Get a random joke with a single click",
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
